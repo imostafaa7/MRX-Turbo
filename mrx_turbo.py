@@ -50,11 +50,17 @@ def print_banner():
     console.clear()
     ascii_banner = pyfiglet.figlet_format("MRX Turbo", font="slant")
     console.print(Text(ascii_banner, style="bold cyan"))
+    
+    # Combined text for the panel to avoid AttributeError
+    content = Text()
+    content.append("Automated Recon & Vulnerability Scanning Workflow\n", style="yellow")
+    content.append("Developed by imostafaa9", style="magenta")
+    
     console.print(Panel(
-        Text("Automated Recon & Vulnerability Scanning Workflow", justify="center", style="yellow"),
-        Text("Developed by imostafaa9", justify="center", style="magenta"),
+        content,
         title="[bold green]Welcome to MRX Turbo![/bold green]",
-        border_style="green"
+        border_style="green",
+        padding=(1, 2)
     ))
     console.print("\n" + "="*70 + "\n", style="heading")
 
@@ -77,7 +83,7 @@ REQUIRED_TOOLS = {
     "gf": "go install github.com/tomnomnom/gf@latest",
     "getJS": "go install github.com/003random/getJS@latest", # Assuming getJS is a Go tool
     "linkfinder": "git clone https://github.com/GerbenJavado/LinkFinder.git && cd LinkFinder && pip3 install -r requirements.txt", # Linkfinder is Python
-    "corsy": "git clone https://github.scom/s0md3v/Corsy.git", # Corsy is Python
+    "corsy": "git clone https://github.com/s0md3v/Corsy.git", # Corsy is Python
 }
 
 def check_and_install_tools():
