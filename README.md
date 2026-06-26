@@ -1,4 +1,5 @@
-![Uploading Gemini_Generated_Image_m813hgm813hgm813.png…]()
+<img width="2430" height="1536" alt="Gemini_Generated_Image_m813hgm813hgm813" src="https://github.com/user-attachments/assets/ade8f308-70c9-4a6f-8131-78bee96e37f2" />
+
 
 ⚡ MRX Turbo - Ultra-Fast Automated Recon Framework
 
